@@ -1,24 +1,25 @@
 "use client";
 
+import Link from "next/link";
 import ModelPopup from "./ModelPopup";
 
 const SiteNavbar = () => {
   const menuItem = (
     <>
       <li>
-        <a>Home</a>
+        <Link href="/">Home</Link>
       </li>
       <li>
-        <a>About Us</a>
+        <Link href="/about">About Us</Link>
       </li>
       <li>
-        <a>Projects</a>
+        <Link href="/projects">Projects</Link>
       </li>
       <li>
-        <a>Services</a>
+        <Link href="/services">Services</Link>
       </li>
       <li>
-        <a>Careers</a>
+        <Link href="/careers">Careers</Link>
       </li>
     </>
   );
@@ -49,7 +50,9 @@ const SiteNavbar = () => {
             {menuItem}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl text-primary">Bala Infra</a>
+        <Link className="btn btn-ghost text-xl text-primary" href="/">
+          Bala Infra
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{menuItem}</ul>

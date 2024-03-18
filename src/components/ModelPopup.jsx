@@ -4,14 +4,17 @@ const ModelPopup = () => {
   return (
     <dialog id="getInTouch" className="modal modal-bottom sm:modal-middle m-3">
       <div className="modal-box m-0 p-0">
-        <div className="modal-action mr-2 ">
-          <form method="dialog">
-            {/* if there is a button in form, it will close the modal */}
-            <button className="btn">X</button>
-          </form>
+        <div className="flex justify-between items-center ">
+          <div>
+            <h3 className="font-bold text-lg mb-2 text-end">Contact Us</h3>
+          </div>
+          <div className="modal-action mr-2 ">
+            <form method="dialog" className="m-0 p-0">
+              {/* if there is a button in form, it will close the modal */}
+              <button className="btn">X</button>
+            </form>
+          </div>
         </div>
-
-        <h3 className="font-bold text-lg mb-2 text-center">Contact Us</h3>
 
         <div className="m-3 p-3">
           <form>
