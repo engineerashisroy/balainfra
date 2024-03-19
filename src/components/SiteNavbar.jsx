@@ -24,7 +24,7 @@ const SiteNavbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-slate-300 ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -50,7 +50,10 @@ const SiteNavbar = () => {
             {menuItem}
           </ul>
         </div>
-        <Link className="btn btn-ghost text-xl text-primary" href="/">
+        <Link
+          className="btn hover:text-red-400 hover:bg-slate-200 text-xl text-primary"
+          href="/"
+        >
           Bala Infra
         </Link>
       </div>

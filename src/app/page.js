@@ -1,9 +1,21 @@
-import Image from "next/image";
+import HeroSlider from "@/components/HeroSlider";
+import HomeCart from "@/components/HomeCart";
+import ServiceCart from "@/components/ServiceCart";
 
 export default function Home() {
   return (
-    <>
-      <h2>Hello world</h2>
-    </>
+    <div>
+      {/* <HeroSlider></HeroSlider> */}
+      {/* <HeroCaousul></HeroCaousul> */}
+      <div>
+        <HeroSlider></HeroSlider>
+      </div>
+      <div className="">
+        <HomeCart></HomeCart>
+      </div>
+      <div className="">
+        <ServiceCart></ServiceCart>{" "}
+      </div>
+    </div>
   );
 }
